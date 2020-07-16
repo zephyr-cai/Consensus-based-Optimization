@@ -25,6 +25,7 @@ To initialize the original CBO optimizer, you will be asked to provide the follo
 -noise_choice, whether to apply the noise term in the original CBO scheme
 -lam_reg, parameter for the regularization term in the optimization if any (default: None)
 -batch_loss, random batch size for calculating the loss function if any (default: None)
+-gpu, whether to apply gpu training (default: False)
 ```
 To initialize the multiprocessing CBO, you will be asked to provide addtional `num_process` for the number of processes, `rank` for the process (0 - `num_process-1`). The `-num` only stands for the number of particles of a single process, the total number would be `num_process * num`. Others arguments are all the same as the original CBO.
 ### Particle Operation
